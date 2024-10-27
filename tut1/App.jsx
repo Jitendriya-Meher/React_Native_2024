@@ -21,6 +21,7 @@ import UseEffectHook from './src/components/UseEffectHook';
 import HIdeShowToggle from './src/components/HIdeShowToggle';
 import StyleWithButton from './src/components/StyleWithButton';
 import Loader from './src/components/Loader';
+import PressableComponents from './src/components/PressableComponents';
 
 const App = () => {
   return (
@@ -78,6 +79,8 @@ const App = () => {
       <StyleWithButton></StyleWithButton>
 
       <Loader></Loader>
+
+      <PressableComponents></PressableComponents>
 
     </View>
   );
