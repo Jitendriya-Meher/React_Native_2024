@@ -17,6 +17,7 @@ import LoginForm from './src/components/LoginForm';
 import ContactListScreen from './src/screens/Contact/ContactListScreen';
 import Grid from './src/components/Grid';
 import ClassComponents from './src/components/ClassComponents';
+import UseEffectHook from './src/components/UseEffectHook';
 
 const App = () => {
   return (
@@ -66,6 +67,8 @@ const App = () => {
       <Grid></Grid>
 
       <ClassComponents></ClassComponents>
+
+      <UseEffectHook></UseEffectHook>
 
     </View>
   );
