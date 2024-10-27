@@ -22,6 +22,7 @@ import HIdeShowToggle from './src/components/HIdeShowToggle';
 import StyleWithButton from './src/components/StyleWithButton';
 import Loader from './src/components/Loader';
 import PressableComponents from './src/components/PressableComponents';
+import StatusBarExample from './src/components/StatusBarExample';
 
 const App = () => {
   return (
@@ -81,6 +82,8 @@ const App = () => {
       <Loader></Loader>
 
       <PressableComponents></PressableComponents>
+
+      <StatusBarExample></StatusBarExample>
 
     </View>
   );
