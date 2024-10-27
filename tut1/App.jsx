@@ -19,6 +19,7 @@ import Grid from './src/components/Grid';
 import ClassComponents from './src/components/ClassComponents';
 import UseEffectHook from './src/components/UseEffectHook';
 import HIdeShowToggle from './src/components/HIdeShowToggle';
+import StyleWithButton from './src/components/StyleWithButton';
 
 const App = () => {
   return (
@@ -72,6 +73,8 @@ const App = () => {
       <UseEffectHook></UseEffectHook>
 
       <HIdeShowToggle></HIdeShowToggle>
+
+      <StyleWithButton></StyleWithButton>
 
     </View>
   );
