@@ -20,6 +20,7 @@ import ClassComponents from './src/components/ClassComponents';
 import UseEffectHook from './src/components/UseEffectHook';
 import HIdeShowToggle from './src/components/HIdeShowToggle';
 import StyleWithButton from './src/components/StyleWithButton';
+import Loader from './src/components/Loader';
 
 const App = () => {
   return (
@@ -75,6 +76,8 @@ const App = () => {
       <HIdeShowToggle></HIdeShowToggle>
 
       <StyleWithButton></StyleWithButton>
+
+      <Loader></Loader>
 
     </View>
   );
