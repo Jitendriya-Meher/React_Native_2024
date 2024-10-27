@@ -1,14 +1,13 @@
-/* eslint-disable space-infix-ops */
 /* eslint-disable jsx-quotes */
 /* eslint-disable quotes */
 /* eslint-disable react-native/no-inline-styles */
-/* eslint-disable eol-last */
 import {View, Text, Button} from 'react-native';
 import React, {useEffect, useState} from 'react';
 
 const UseEffectHook = () => {
   const [count, setCount] = useState(0);
   const [score, setScore] = useState(0);
+  const [showChild, setShowChild] = useState(true);
 
   useEffect(() => {
     console.log('This is useeffect hook');
@@ -17,6 +16,10 @@ const UseEffectHook = () => {
   useEffect(() => {
     console.log('This is useeffect hook for score and count');
   }, [score, count]);
+
+  useEffect(()=> {
+    console.log("object")
+  },[]);
 
   return (
     <View>
@@ -41,7 +44,16 @@ const UseEffectHook = () => {
         }}
       />
 
-      <InfoDetails count={count} points={score} />
+      <Button title='Toggle Hide'
+        onPress={() => setShowChild(!showChild)}
+      />
+
+      {
+        showChild ?
+        <InfoDetails count={count} points={score} /> 
+        :
+        null
+      }
 
     </View>
   );
@@ -56,6 +68,12 @@ const InfoDetails = ({count,points}) => {
     useEffect(()=>{
         console.log("I am a Child Components for Poits");
     },[points]);
+
+    useEffect(() => {
+        return() => {
+            console.log("Child component Unmount");
+        };
+    },[]);
 
     return(
         <View>
